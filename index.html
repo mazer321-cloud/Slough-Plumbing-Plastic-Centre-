@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Slough Plumbing & Plastic Centre Ltd</title>
-  <meta name="description" content="Slough Plumbing & Plastic Centre Ltd supplies plumbing, plastics and building materials from Unit 5, Twin Trees Farm, Rowley Lane, Slough." />
+  <meta name="description" content="Slough Plumbing & Plastic Centre Ltd supplies plumbing, plastics and building materials in Slough." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -820,8 +820,19 @@
     }
 
     @media (max-width: 950px) {
+      .top-bar {
+        justify-content: center;
+        text-align: center;
+      }
+
       .nav-links {
         display: none;
+      }
+
+      nav {
+        width: min(100%, 92%);
+        min-height: 76px;
+        gap: 12px;
       }
 
       .hero-grid,
@@ -830,36 +841,143 @@
         grid-template-columns: 1fr;
       }
 
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .hero {
+        padding: 68px 5% 58px;
+      }
+
+      .hero-grid {
+        gap: 32px;
       }
 
       .hero-card {
         transform: none;
+        padding: 16px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cta-box {
+        text-align: center;
+      }
+
+      .cta-box .btn {
+        width: 100%;
       }
     }
 
     @media (max-width: 620px) {
       .top-bar {
-        gap: 10px;
-        font-size: 12px;
+        padding: 8px 4%;
+        gap: 8px;
+        font-size: 11px;
+        line-height: 1.3;
       }
 
       nav {
-        min-height: 72px;
+        min-height: auto;
+        padding: 12px 0;
+      }
+
+      .logo {
+        gap: 8px;
+        min-width: 0;
       }
 
       .logo-text {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+
+      .logo-text small {
+        font-size: 9px;
+        letter-spacing: 0.03em;
       }
 
       .logo-mark {
-        width: 42px;
-        height: 42px;
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        padding: 5px !important;
+        flex: 0 0 auto;
+      }
+
+      .logo-mark img {
+        width: 46px !important;
+      }
+
+      nav > .btn {
+        padding: 11px 13px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      section {
+        padding: 58px 5%;
       }
 
       .hero {
-        padding-top: 60px;
+        padding: 46px 5% 54px;
+      }
+
+      .badge {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        font-size: clamp(38px, 12vw, 50px);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+      }
+
+      .hero p,
+      .section-head p,
+      .cta-box p {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+        padding: 14px 16px;
+      }
+
+      .rating-strip {
+        font-size: 14px;
+        gap: 8px;
+      }
+
+      .hero-card {
+        border-radius: 26px;
+        padding: 12px;
+      }
+
+      .store-visual {
+        min-height: auto;
+        padding: 18px;
+        border-radius: 20px;
+      }
+
+      .store-sign {
+        padding: 18px;
+        border-radius: 18px;
+      }
+
+      .store-sign h2 {
+        font-size: 26px;
+      }
+
+      .store-sign p {
+        font-size: 14px;
       }
 
       .services-grid,
@@ -867,25 +985,117 @@
         grid-template-columns: 1fr;
       }
 
-      .store-visual {
-        min-height: 360px;
+      .product-stack {
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .product-pill {
+        padding: 13px 14px;
+        border-radius: 14px;
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: clamp(30px, 10vw, 40px);
+        line-height: 1.03;
+        letter-spacing: -0.045em;
+      }
+
+      .section-head {
+        margin-bottom: 26px;
+      }
+
+      .service-card,
+      .feature-box,
+      .info-card {
+        border-radius: 22px;
+        padding: 22px;
+      }
+
+      .service-card:hover,
+      .feature-box:hover,
+      .info-card:hover,
+      .cta-box:hover {
+        transform: none;
+      }
+
+      .feature-item {
+        padding: 16px;
+      }
+
+      .info-card .section-head h2 {
+        font-size: 30px !important;
       }
 
       .info-row {
         flex-direction: column;
         gap: 4px;
+        padding: 15px 0;
       }
 
       .info-row span {
         text-align: left;
       }
 
+      .reviews {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .reviews .container {
+        width: 90%;
+      }
+
+      .review-track-wrap {
+        mask-image: none;
+        overflow-x: auto;
+        padding: 4px 5% 10px;
+        scroll-snap-type: x mandatory;
+      }
+
+      .review-track {
+        animation: none;
+        width: max-content;
+      }
+
       .review-card {
-        width: 300px;
+        width: 82vw;
+        max-width: 340px;
+        padding: 22px;
+        scroll-snap-align: start;
+      }
+
+      .review-card p {
+        font-size: 15px;
+      }
+
+      .cta {
+        padding-bottom: 58px;
       }
 
       .cta-box {
-        padding: 32px;
+        padding: 28px 22px;
+        border-radius: 26px;
+      }
+
+      footer {
+        padding: 28px 6%;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .logo-text {
+        display: none;
+      }
+
+      nav > .btn {
+        padding: 10px 12px;
+      }
+
+      h1 {
+        font-size: 36px;
       }
     }
   </style>
@@ -893,7 +1103,7 @@
 <body>
   <div class="top-bar">
     <span>⭐ 4.8 rated on Google</span>
-    <span>🕖 Opens 7am Thursday</span>
+    <span>🕖 Mon–Fri 7am–6pm • Sat 8am–2pm • Sun Closed</span>
   </div>
 
   <header>
@@ -938,10 +1148,13 @@
               <p>Pick up the parts, pipework, plastics and materials you need for the job.</p>
             </div>
             <div class="product-stack">
-              <div class="product-pill">Pipes & fittings</div>
-              <div class="product-pill">Plastics</div>
-              <div class="product-pill">Plumbing supplies</div>
-              <div class="product-pill">Building materials</div>
+              <div class="product-pill">Plumbing</div>
+              <div class="product-pill">Heating</div>
+              <div class="product-pill">Fascia & Guttering</div>
+              <div class="product-pill">GRP Roofing</div>
+              <div class="product-pill">Bathrooms</div>
+              <div class="product-pill">Roof Materials</div>
+              <div class="product-pill">Underfloor Heating</div>
             </div>
           </div>
         </div>
@@ -1026,7 +1239,11 @@
           </div>
           <div class="info-row">
             <strong>Opening</strong>
-            <span>Opens 7am Thursday</span>
+            <span>
+              Mon–Fri: 7am–6pm<br>
+              Saturday: 8am–2pm<br>
+              Sunday: Closed
+            </span>
           </div>
         </div>
       </div>
@@ -1102,7 +1319,7 @@
         <div class="cta-box reveal">
           <div>
             <h2>Need materials for your next job?</h2>
-            <p>Call Slough Plumbing & Plastic Centre Ltd today or visit the trade counter in Slough.</p>
+            <p>Call Slough Plumbing & Plastic Centre Ltd today for quick advice, stock checks and helpful service.</p>
           </div>
           <a class="btn btn-secondary" href="tel:07777754954">Call 07777 754954</a>
         </div>
